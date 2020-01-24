@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b85bc633-c816-4fff-8d66-05f2c15c54d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tri_BulleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algo1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo1/META-INF/algo1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algo1/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo1/Tri_Bulle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algo1/Tri_Bulle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tri_Bulle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tri_Bulle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tri_Fusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tri_Fusion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +36,10 @@
   <component name="ProjectId" id="1Wod0Q4JzPI6ZDDtU7aeD2rIp5n" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
@@ -63,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="JUnit.Tri_BulleTest.tri_bulle">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="algo1" />
@@ -90,8 +100,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tri_BulleTest.tri_bulle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algo1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tri_BulleTest" />
+      <option name="METHOD_NAME" value="tri_bulle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tri_BulleTest.tri_bulle" />
         <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.Tri_BulleTest" />
         <item itemvalue="JUnit.Tri_BulleTest.compare" />
@@ -109,6 +130,21 @@
       <option name="presentableId" value="Default" />
       <updated>1579781319078</updated>
     </task>
+    <task id="LOCAL-00001" summary="tri_bulle">
+      <created>1579821145495</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579821145495</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cree class Tri_Fusion">
+      <created>1579821212962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579821212962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,11 +152,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tri_bulle" />
+    <MESSAGE value="cree class Tri_Fusion" />
+    <option name="LAST_COMMIT_MESSAGE" value="cree class Tri_Fusion" />
   </component>
   <component name="masterDetails">
     <states>

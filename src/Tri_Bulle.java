@@ -7,7 +7,7 @@ public class Tri_Bulle {
     boolean tri = false;
     int borne=tab.size();
 
-    public void  compare(ArrayList<Integer> tab1) {
+    public void tri_bulle(ArrayList<Integer> tab1) {
         borne=tab1.size();
         tri=false;
         while (tri==false) {
