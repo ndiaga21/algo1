@@ -2,15 +2,13 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
-
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
 class Tri_BulleTest {
     Tri_Bulle tri_bulle = new Tri_Bulle();
-    ArrayList listTrie = new ArrayList<>();
-    ArrayList list_A_trie = new ArrayList<>();
+    ArrayList<Integer> listTrie = new ArrayList<>();
+    ArrayList<Integer> list_A_trie = new ArrayList<>();
 
     @Test
     void tri_bulle() {

@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Tri_Bulle {
 
-
     ArrayList<Integer> tab = new ArrayList<>();
     boolean tri = false;
     int borne=tab.size();

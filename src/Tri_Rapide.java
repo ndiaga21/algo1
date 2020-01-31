@@ -5,41 +5,36 @@ public class Tri_Rapide {
     public static void tri_rapide(ArrayList<Integer> list, int premier, int dernier) {
 
         if (premier < dernier) {
-           // int pivot = choix_pivot(list, premier, dernier);
-            int pivot = partitionner(list, premier,dernier);
-            tri_rapide(list, premier, pivot-1);
-            tri_rapide(list,pivot+1,dernier);
+            int pivot = partitionner(list, premier, dernier);
+            tri_rapide(list, premier, pivot - 1);
+            tri_rapide(list, pivot + 1, dernier);
 
         }
-        //System.out.println(m);
+
     }
 
-    public static int partitionner(ArrayList<Integer> list, int premier, int dernier) {
-         // echanger(list.get(pivot),list.get(dernier));
+    private static int partitionner(ArrayList<Integer> list, int premier, int dernier) {
         int pivot = list.get(dernier);
-        int j = premier;
+        int j = premier-1;
         for (int i = premier; i < dernier; i++) {
             if (list.get(i) <= pivot) {
-                j=j+1;
-                echanger(list,list.get(i), list.get(j));
-
+                j = j + 1;
+                permute(list, list.get(i), list.get(j));
             }
-        }
-
-        echanger(list,list.get(dernier),list.get(j));
-        System.out.println(j);
-        return j;
+         }
+        permute(list, list.get(dernier), list.get(j+1));
+        return j+1;
     }
 
-    private static void echanger(ArrayList<Integer> t,int val1, int val2) {
-        int tmp = t.get(val1);
-        t.set(val1,t.get(val2));
-        t.set(val2, tmp);
+    private static void permute(ArrayList<Integer> t, int val1, int val2) {
+        int tmp = val1;
+        t.set(t.indexOf(val1), val2);
+        t.set(t.indexOf(val2), tmp);
 
     }
 
     private static int choix_pivot(ArrayList<Integer> list, int premier, int dernier) {
-         int pivot = (int) (Math.random()*(dernier-premier));
+        int pivot = (int) (Math.random() * (dernier - premier));
         return list.get(pivot);
     }
 }
