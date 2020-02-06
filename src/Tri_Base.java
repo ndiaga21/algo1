@@ -1,12 +1,17 @@
 import java.util.ArrayList;
 
 public class Tri_Base {
+
     public static void tri_par_base(ArrayList<Integer> list, int base) {
         int m = max(list);
         int p = 1;
+
         while ((m / p) > 0) {
             denombrement(list, base, p);
+            p=p*base;
+
         }
+        System.out.println(list);
     }
 
     public static void denombrement(ArrayList<Integer> list, int base, int p) {
