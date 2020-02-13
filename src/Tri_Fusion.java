@@ -1,27 +1,27 @@
+import java.util.ArrayList;
 
 public class Tri_Fusion {
-    //LinkedList list = new LinkedList();
 
-    public static void triFusion(int tableau[],int deb,int fin)
+    public static void triFusion(ArrayList<Integer> list,int deb,int fin)
     {
         if (deb!=fin)
         {
             int milieu=(fin+deb)/2;
-            triFusion(tableau,deb,milieu);
-            triFusion(tableau,milieu+1,fin);
-            fusion(tableau,deb,milieu,fin);
+            triFusion(list,deb,milieu);
+            triFusion(list,milieu+1,fin);
+            fusion(list,deb,milieu,fin);
         }
     }
 
-    private static void fusion(int tableau[],int deb1,int fin1,int fin2)
+    private static void fusion(ArrayList<Integer> list, int deb1, int fin1, int fin2)
     {
         int deb2=fin1+1;
 
         //on recopie les éléments du début du tableau
-        int table1[]=new int[fin1-deb1+1];
+        ArrayList<Integer> list1=new ArrayList<>(fin1-deb1+1);
         for(int i=deb1;i<=fin1;i++)
         {
-            table1[i-deb1]=tableau[i];
+            list1.add(i-deb1,list.get(i));
         }
 
         int compt1=deb1;
@@ -35,17 +35,17 @@ public class Tri_Fusion {
             }
             else if (compt2==(fin2+1)) //c'est que tous les éléments du second tableau ont été utilisés
             {
-                tableau[i]=table1[compt1-deb1]; //on ajoute les éléments restants du premier tableau
+                list.set(i,list1.get(compt1-deb1)); //on ajoute les éléments restants du premier tableau
                 compt1++;
             }
-            else if (table1[compt1-deb1]<tableau[compt2])
+            else if (list1.get(compt1-deb1)<list.get(compt2))
             {
-                tableau[i]=table1[compt1-deb1]; //on ajoute un élément du premier tableau
+                list.set(i,list1.get(compt1-deb1)); //on ajoute un élément du premier tableau
                 compt1++;
             }
             else
             {
-                tableau[i]=tableau[compt2]; //on ajoute un élément du second tableau
+                list.set(i,list.get(compt2)); //on ajoute un élément du second tableau
                 compt2++;
             }
         }

@@ -11,7 +11,6 @@ public class Tri_Base {
             p=p*base;
 
         }
-        System.out.println(list);
     }
 
     public static void denombrement(ArrayList<Integer> list, int base, int p) {
