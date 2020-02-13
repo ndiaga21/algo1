@@ -9,7 +9,7 @@ public class Generation {
                 borne1 = borne2;
                 borne2 = tmp;
         }
-        for (int i =borne1; i <borne2 ; i++) {
+        for (int i =0; i <10000 ; i++) {
             list_Genere.add(borne1 + (int)(Math.random() * ((borne2 - borne1) + 1)));
 
         }

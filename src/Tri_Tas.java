@@ -1,6 +1,7 @@
  import java.util.ArrayList;
 
-public class Tri_Tas {
+public class
+Tri_Tas {
 
     public static void tri_par_tas(ArrayList<Integer> list) {
         construire_Tas_Max(list);
